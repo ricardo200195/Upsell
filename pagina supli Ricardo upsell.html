@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suplemento Esportivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: auto;
+            gap: 20px;
+        }
+        .content {
+            flex: 2;
+        }
+        .sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        button {
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .buy-button {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+        .decline-button {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suplemento Esportivo Ultra Power</h1>
+    <p>Alcance seu máximo desempenho com a fórmula avançada do Ultra Power!</p>
+    
+    <div class="container">
+        <div class="content">
+            <img src="suplemento.jpg" alt="Suplemento Esportivo Ultra Power">
+            <h2>Benefícios do Produto</h2>
+            <ul>
+                <li>Aumenta a resistência e energia</li>
+                <li>Auxilia na recuperação muscular</li>
+                <li>Fórmula testada e aprovada</li>
+            </ul>
+            <p><strong>Oferta especial por tempo limitado!</strong></p>
+            <button class="ticto-upsell-button buy-button" data-offer-code="ODFD943B0">Comprar Agora</button>
+            <br>
+            <button class="decline-button">Não quero, obrigado</button>
+        </div>
+        <div class="sidebar">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+        </div>
+    </div>
+</body>
+</html>
