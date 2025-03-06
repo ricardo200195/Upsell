@@ -16,18 +16,23 @@
             max-width: 1000px;
             margin: auto;
             gap: 20px;
+            justify-content: space-between;
         }
         .content {
             flex: 2;
+            margin-top: 20px;
         }
         .sidebar {
             flex: 1;
             display: flex;
             flex-direction: column;
             gap: 10px;
+            justify-content: flex-start;
         }
         img {
-            max-width: 100%;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
         }
         button {
@@ -46,6 +51,15 @@
             background-color: red;
             color: white;
         }
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .sidebar iframe {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -62,18 +76,20 @@
                 <li>Fórmula testada e aprovada</li>
             </ul>
             <p><strong>Oferta especial por tempo limitado!</strong></p>
-            <a href="https://checkout.qa13.ticto.dev/O37CFEC92">
-                <button class="ticto-upsell-button buy-button" data-offer-code="O37CFEC92">Comprar Agora</button>
-            </a>
-            <br>
-            <a href="https://checkout.qa13.ticto.dev/O37CFEC92">
-                <button class="ticto-upsell-button decline-button" data-offer-code="ODFD943B0">Não quero, obrigado</button>
-            </a>
         </div>
         <div class="sidebar">
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/FhD9ElhsjQg" frameborder="0" allowfullscreen></iframe>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/rrOeLYcLWFU" frameborder="0" allowfullscreen></iframe>
         </div>
+    </div>
+
+    <div class="buttons-container">
+        <a href="https://checkout.qa13.ticto.dev/O37CFEC92">
+            <button class="ticto-upsell-button buy-button" data-offer-code="O37CFEC92">Comprar Agora</button>
+        </a>
+        <a href="https://checkout.qa13.ticto.dev/O37CFEC92">
+            <button class="ticto-upsell-button decline-button" data-offer-code="ODFD943B0">Não quero, obrigado</button>
+        </a>
     </div>
 </body>
 </html>
